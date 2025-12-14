@@ -15,7 +15,9 @@
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
     (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '127978927946856'); fbq('track', 'PageView'); fbq('track', 'ViewContent');
+    fbq('init', '127978927946856');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent');
   </script>
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=127978927946856&ev=PageView&noscript=1"/></noscript>
@@ -32,161 +34,507 @@
         ttq._o = ttq._o || {}; ttq._o[e] = n || {}; var o = document.createElement("script");
         o.type = "text/javascript"; o.async = !0; o.src = i + "?sdkid=" + e + "&lib=" + t;
         var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
-      ttq.load('D0EVS2JC77U9C23772EG'); ttq.page(); ttq.track('ViewContent');
+      ttq.load('D0EVS2JC77U9C23772EG');
+      ttq.page();
+      ttq.track('ViewContent');
     }(window, document, 'ttq');
   </script>
 
   <!-- Google Ads (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17035064059"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
-    gtag('js', new Date()); gtag('config','AW-17035064059');</script>
+  <script>
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments)}
+    gtag('js', new Date());
+    gtag('config','AW-17035064059');
+  </script>
 
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
-    :root{--primary:#9b7ede;--primary-strong:#7a5ccf;--light:#f8f5ff;--bg:#faf9fc;--white:#fff;--border:#ece7ff;--shadow:0 4px 18px rgba(24,16,52,.08)}
-    body{font-family:'Kanit',sans-serif;margin:0;background:var(--bg);color:#161823;padding-bottom:75px}
-    .wrap{max-width:430px;margin:0 auto}
-    header h1{font-size:1.18rem;line-height:1.5;color:var(--primary-strong);padding:14px;text-align:center;margin:0}
-    .badge{display:inline-block;background:var(--primary);color:#fff;font-size:.92rem;font-weight:700;border-radius:6px;padding:3px 8px;margin:0 6px 6px 0}
-    .badge.gray{background:#2e2e2e}
-    .trust{background:var(--light);color:var(--primary-strong);text-align:center;font-weight:700;font-size:1.02rem;padding:10px 8px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-    .card{background:var(--white);border-radius:14px;box-shadow:var(--shadow);margin:10px 10px;padding:14px 16px}
-    .gallery img{width:100%;max-width:360px;display:block;margin:0 auto;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,.08);border:1px solid var(--border)}
-    .price{display:flex;align-items:center;justify-content:center;gap:12px}
-    .price .now{color:var(--primary-strong);font-size:2.0rem;font-weight:800}
-    .price .was{color:#b5b5b5;text-decoration:line-through;font-size:1.05rem}
-    .title{text-align:center;color:var(--primary);font-weight:600;font-size:1.1rem;margin-top:10px}
-    .pack-box{background:#fbf9ff;border:1px solid var(--border);border-radius:12px;padding:10px 12px}
-    .options{display:flex;flex-wrap:wrap;gap:9px;margin-top:8px}
-    .btn-option{
-  border:2px solid #eee;
-  background:#fff;
-  color:var(--primary-strong);
-  border-radius:10px;
-  padding:12px 16px;      /* ขยาย padding ให้สมดุลกับฟอนต์ */
-  font-weight:700;
-  cursor:pointer;
-  transition:.15s;
-  font-size:1rem;         /* ตัวหนังสือใหญ่ขึ้น 2 เท่า */
-}
+    :root{
+      /* Shopee-like */
+      --primary:#ee4d2d;
+      --primary-strong:#d73211;
+      --bg:#f5f5f5;
+      --white:#fff;
+      --text:#111827;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+      --shadow:0 6px 22px rgba(0,0,0,.08);
+      --green:#22c55e;
+      --yellow:#f59e0b;
+      --line:#06c755;
+    }
 
-    .btn-option:hover{border-color:var(--primary)}
-    .btn-option.active{background:#f0eaff;border-color:var(--primary);box-shadow:0 1px 7px #cbb7ff44}
-    .scarcity{background:#f7f0ff;border:1.5px dashed var(--primary);color:var(--primary-strong);text-align:center;border-radius:10px;padding:10px;font-weight:700}
-    .shop{display:flex;gap:12px;align-items:center}
-    .shop .avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#9b7ede,#b69bff);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
-    .btn-line{display:flex;align-items:center;justify-content:center;gap:10px;background:#06c755;color:#fff;font-weight:700;border:none;border-radius:10px;padding:13px 16px;text-decoration:none;cursor:pointer;box-shadow:0 2px 10px rgba(6,199,85,.1)}
-    .features .row{display:flex;gap:10px;align-items:center;margin:10px 0}
-    .features .icon{color:var(--primary-strong);font-size:1.2rem}
+    *{box-sizing:border-box}
+    body{
+      font-family:'Kanit',sans-serif;margin:0;
+      background:var(--bg);color:var(--text);
+      padding-bottom:76px;
+    }
+    .wrap{max-width:430px;margin:0 auto}
+
+    /* ===== Shopee top bar ===== */
+    .topbar{
+      position:sticky;top:0;z-index:1000;
+      background:linear-gradient(180deg,var(--primary),var(--primary-strong));
+      padding:10px 10px 12px;
+      box-shadow:0 6px 18px rgba(0,0,0,.12);
+    }
+    .toprow{display:flex;gap:10px;align-items:center}
+    .brand{
+      width:34px;height:34px;border-radius:10px;
+      background:#fff;color:var(--primary);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:900;
+    }
+    .search{
+      flex:1;background:#fff;border-radius:12px;
+      display:flex;align-items:center;gap:8px;
+      padding:10px 12px;
+      box-shadow:0 1px 0 rgba(0,0,0,.06) inset;
+    }
+    .search i{color:#9ca3af}
+    .search .hint{color:#9ca3af;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .icons{display:flex;gap:10px;align-items:center}
+    .icbtn{
+      width:36px;height:36px;border-radius:12px;
+      background:rgba(255,255,255,.18);
+      color:#fff;display:flex;align-items:center;justify-content:center;
+      border:1px solid rgba(255,255,255,.25);
+    }
+    .subbar{
+      margin-top:10px;
+      display:flex;gap:8px;flex-wrap:wrap;
+    }
+    .chip{
+      background:rgba(255,255,255,.18);
+      border:1px solid rgba(255,255,255,.22);
+      color:#fff;font-weight:700;
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:.88rem;
+      display:inline-flex;gap:6px;align-items:center;
+    }
+
+    /* ===== Product area ===== */
+    .card{
+      background:var(--white);
+      border:1px solid var(--border);
+      border-radius:14px;
+      box-shadow:var(--shadow);
+      margin:10px;
+      padding:14px;
+    }
+
+    .gallery img{
+      width:100%;
+      max-width:390px;
+      display:block;margin:0 auto;
+      border-radius:12px;
+      border:1px solid var(--border);
+      box-shadow:0 2px 12px rgba(0,0,0,.06);
+    }
+
     .video{text-align:center}
-    .video video{max-width:360px;width:100%;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
-    .sticky{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--border);height:64px;display:flex;z-index:50}
-    .sticky .btn-line{width:38%;border-radius:0}
-    .sticky .btn-buy{width:62%;border:none;background:var(--primary);color:#fff;font-weight:800;font-size:1.15rem;cursor:pointer}
-    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;z-index:3000}
-    .modal{position:fixed;left:0;right:0;bottom:0;background:#fff;border-radius:18px 18px 0 0;box-shadow:var(--shadow);padding:18px 14px;max-height:92vh;overflow:auto;z-index:3001;transform:translateY(22px);animation:slideUp .22s ease forwards}
-    @keyframes slideUp{to{transform:translateY(0)}}
-    .x{position:absolute;right:16px;top:10px;color:#999;font-size:1.6rem;cursor:pointer}
-    .modal .head{display:flex;gap:12px;align-items:center;border-bottom:1px solid #f0eefc;padding-bottom:10px;margin-bottom:10px}
-    .modal .head img{width:66px;height:66px;border-radius:10px;border:1px solid var(--border);object-fit:cover}
-    .m-title{font-weight:600;font-size:1.05rem}
-    .m-price{color:var(--primary-strong);font-size:1.26rem;font-weight:800}
-    .form label{display:block;font-weight:600;margin:10px 0 6px}
-    .form input,.form textarea{width:100%;border:1px solid #ddd;border-radius:9px;padding:11px;font-size:1.02rem;font-family:'Kanit',sans-serif}
-    .submit{width:100%;background:var(--primary);color:#fff;border:none;border-radius:10px;padding:14px;font-weight:800;font-size:1.05rem;margin-top:12px;cursor:pointer;box-shadow:0 1px 10px rgba(155,126,222,.25)}
-    .submit:disabled{background:#d6c9ff;cursor:not-allowed}
-    #salesToastContainer{position:fixed;left:12px;bottom:84px;z-index:5000}
-    .toast{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #e9e4ff;box-shadow:0 6px 22px rgba(0,0,0,.08);border-radius:12px;padding:10px 12px;min-width:260px;max-width:320px;animation:toastSlide .28s ease-out}
-    .toast .av{width:40px;height:40px;border-radius:50%;background:#f0eaff;display:flex;align-items:center;justify-content:center;font-weight:700;color:#7a5ccf;border:1px solid #d8cfff}
-    .toast .text{font-size:.94rem;line-height:1.25;color:#1e293b}
-    .toast .time{color:#64748b;font-size:.82rem;margin-top:2px}
-    .toast strong{color:#7a5ccf}
-    @keyframes toastSlide{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}
+    .video video{
+      max-width:390px;width:100%;
+      border-radius:12px;
+      border:1px solid var(--border);
+      box-shadow:0 2px 12px rgba(0,0,0,.06);
+    }
+
+    .titleBlock{padding:4px 2px 0}
+    .prodTitle{
+      font-size:1.05rem;line-height:1.45;
+      font-weight:700;color:#111827;
+      margin:0;
+    }
+    .metaRow{
+      margin-top:8px;
+      display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+      color:var(--muted);font-size:.92rem;
+    }
+    .stars{color:#fbbf24}
+    .sep{opacity:.35}
+
+    .priceRow{
+      margin-top:10px;
+      display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap;
+    }
+    .now{
+      color:var(--primary);
+      font-size:2.05rem;font-weight:900;line-height:1;
+    }
+    .now small{font-size:1.1rem;font-weight:800}
+    .was{
+      color:#9ca3af;text-decoration:line-through;
+      font-size:1.02rem;
+    }
+    .off{
+      background:#fff1f2;color:#e11d48;
+      border:1px solid #fecdd3;
+      font-weight:900;border-radius:8px;
+      padding:5px 8px;font-size:.9rem;
+    }
+
+    .voucherRow{
+      margin-top:12px;
+      display:flex;gap:10px;align-items:flex-start;
+    }
+    .vLeft{
+      color:var(--muted);
+      font-weight:700;font-size:.92rem;
+      width:72px;flex:0 0 auto;
+      padding-top:2px;
+    }
+    .vItems{
+      flex:1;display:flex;gap:8px;flex-wrap:wrap;
+    }
+    .voucher{
+      border:1px dashed #f59e0b;
+      background:#fff7ed;color:#b45309;
+      font-weight:900;border-radius:10px;
+      padding:7px 10px;font-size:.9rem;
+      display:inline-flex;gap:7px;align-items:center;
+    }
+    .voucher i{color:#f59e0b}
+
+    .shipRow{
+      margin-top:10px;
+      display:flex;gap:10px;align-items:flex-start;
+    }
+    .shipTag{
+      display:inline-flex;gap:8px;align-items:center;
+      font-weight:900;color:#16a34a;
+      background:#ecfdf5;border:1px solid #bbf7d0;
+      border-radius:10px;padding:7px 10px;
+      font-size:.92rem;
+    }
+    .shipTag i{color:#16a34a}
+    .codTag{
+      display:inline-flex;gap:8px;align-items:center;
+      font-weight:900;color:#111827;
+      background:#f3f4f6;border:1px solid #e5e7eb;
+      border-radius:10px;padding:7px 10px;
+      font-size:.92rem;
+    }
+
+    /* Packs */
+    .pack-box{
+      margin-top:14px;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:12px;
+    }
+    .pack-head{
+      display:flex;justify-content:space-between;align-items:center;gap:10px;
+      margin-bottom:8px;
+    }
+    .pack-head b{font-size:1rem}
+    .hintSmall{color:var(--muted);font-size:.9rem}
+
+    .options{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .btn-option{
+      border:1.6px solid var(--border);
+      background:#fff;
+      color:#111827;
+      border-radius:12px;
+      padding:11px 12px;
+      font-weight:900;
+      cursor:pointer;
+      transition:.15s;
+      font-size:.95rem;
+    }
+    .btn-option:hover{border-color:#cbd5e1}
+    .btn-option.active{
+      border-color:var(--primary);
+      color:var(--primary);
+      background:#fff5f1;
+      box-shadow:0 1px 10px rgba(238,77,45,.14);
+    }
+    .packNote{
+      margin-top:8px;
+      color:var(--muted);
+      font-size:.93rem;
+    }
+
+    .scarcity{
+      margin-top:12px;
+      background:#fff5f1;
+      border:1px dashed rgba(238,77,45,.65);
+      color:var(--primary-strong);
+      border-radius:12px;
+      padding:10px 12px;
+      font-weight:900;
+      text-align:center;
+    }
+
+    /* Shop block */
+    .shop{
+      display:flex;gap:12px;align-items:center;
+    }
+    .avatar{
+      width:52px;height:52px;border-radius:14px;
+      background:linear-gradient(135deg,var(--primary),#ff8a65);
+      color:#fff;display:flex;align-items:center;justify-content:center;
+      font-weight:1000;
+      box-shadow:0 6px 14px rgba(238,77,45,.22);
+    }
+    .shopname{font-weight:1000;font-size:1.02rem}
+    .shopmeta{color:var(--muted);font-size:.9rem;margin-top:2px}
+    .btn-line{
+      display:flex;align-items:center;justify-content:center;gap:10px;
+      background:var(--line);color:#fff;font-weight:1000;
+      border:none;border-radius:12px;
+      padding:12px 12px;text-decoration:none;cursor:pointer;
+      box-shadow:0 8px 18px rgba(6,199,85,.18);
+      margin-top:8px;
+    }
+
+    /* Features */
+    .features h3{margin:0 0 8px 0;font-size:1.03rem}
+    .features .row{
+      display:flex;gap:10px;align-items:flex-start;
+      margin:10px 0;color:#111827;
+    }
+    .features .icon{color:var(--primary);font-size:1.15rem;margin-top:2px}
+    .fineprint{color:#9ca3af;font-size:.9rem;margin-top:4px}
+
+    /* Reviews */
     .reviews h3{margin:0 0 10px 0;font-size:1.05rem}
-    .rev{border-top:1px solid #f0eefc;padding-top:10px;margin-top:10px}
+    .rev{border-top:1px solid #f1f5f9;padding-top:10px;margin-top:10px}
     .rev:first-child{border-top:none;padding-top:0;margin-top:0}
     .rev-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-    .rev .stars{color:#f9d71c}
-    .rev .author{font-weight:600;font-size:.93rem}
-    .rev .text{font-size:.97rem;line-height:1.46;color:#1f2937}
+    .rev .stars{color:#fbbf24}
+    .rev .author{font-weight:900;font-size:.93rem}
+    .rev .text{font-size:.97rem;line-height:1.46;color:#111827;margin:0}
     .rev .shots{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
-    .rev .shots img{width:220px;max-width:100%;border-radius:11px;border:1px solid #eee}
+    .rev .shots img{width:240px;max-width:100%;border-radius:12px;border:1px solid #e5e7eb}
     .rev .meta{color:#9aa1ad;font-size:.9rem;margin-top:6px}
-    .seller-reply{background:#fbf9ff;padding:8px 12px;border-radius:8px;margin-top:8px;font-size:.98rem;color:#6b6b6b;border:1px solid var(--border)}
-    @media(max-width:430px){.card{margin:10px 8px}}
+    .seller-reply{background:#f9fafb;padding:8px 12px;border-radius:10px;margin-top:8px;font-size:.98rem;color:#6b7280;border:1px solid #eef2f7}
+
+    /* Sticky Footer */
+    .sticky{
+      position:fixed;bottom:0;left:0;right:0;z-index:50;
+      background:#fff;border-top:1px solid var(--border);
+      height:66px;display:flex;gap:0;
+    }
+    .sticky .btn-line{
+      width:40%;
+      border-radius:0;
+      margin:0;
+      box-shadow:none;
+      padding:0 10px;
+      font-size:1.02rem;
+    }
+    .sticky .btn-buy{
+      width:60%;
+      border:none;
+      background:var(--primary);
+      color:#fff;font-weight:1000;
+      font-size:1.18rem;
+      cursor:pointer;
+    }
+
+    /* Modal */
+    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;z-index:3000}
+    .modal{
+      position:fixed;left:0;right:0;bottom:0;
+      background:#fff;border-radius:18px 18px 0 0;
+      box-shadow:var(--shadow);
+      padding:18px 14px;max-height:92vh;overflow:auto;
+      z-index:3001;
+      transform:translateY(22px);
+      animation:slideUp .22s ease forwards;
+    }
+    @keyframes slideUp{to{transform:translateY(0)}}
+    .x{position:absolute;right:16px;top:10px;color:#9ca3af;font-size:1.6rem;cursor:pointer}
+    .modal .head{display:flex;gap:12px;align-items:center;border-bottom:1px solid #f1f5f9;padding-bottom:10px;margin-bottom:10px}
+    .modal .head img{width:72px;height:72px;border-radius:12px;border:1px solid var(--border);object-fit:cover}
+    .m-title{font-weight:900;font-size:1.02rem}
+    .m-price{color:var(--primary);font-size:1.3rem;font-weight:1000}
+    .form label{display:block;font-weight:900;margin:10px 0 6px}
+    .form input,.form textarea{
+      width:100%;
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      padding:12px;
+      font-size:1.02rem;
+      font-family:'Kanit',sans-serif;
+      background:#fff;
+    }
+    .submit{
+      width:100%;
+      background:var(--primary);
+      color:#fff;border:none;border-radius:12px;
+      padding:14px;font-weight:1000;font-size:1.06rem;
+      margin-top:12px;cursor:pointer;
+      box-shadow:0 10px 18px rgba(238,77,45,.18);
+    }
+    .submit:disabled{background:#f3a08f;cursor:not-allowed}
+
+    /* Toast */
+    #salesToastContainer{position:fixed;left:12px;bottom:86px;z-index:5000}
+    .toast{
+      display:flex;gap:10px;align-items:center;
+      background:#fff;border:1px solid #eef2f7;
+      box-shadow:0 10px 26px rgba(0,0,0,.10);
+      border-radius:14px;padding:10px 12px;
+      min-width:260px;max-width:330px;
+      animation:toastSlide .28s ease-out;
+    }
+    .toast .av{
+      width:40px;height:40px;border-radius:14px;
+      background:#fff5f1;border:1px solid rgba(238,77,45,.22);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:1000;color:var(--primary);
+    }
+    .toast .text{font-size:.94rem;line-height:1.25;color:#111827}
+    .toast .time{color:#64748b;font-size:.82rem;margin-top:2px}
+    .toast strong{color:var(--primary)}
+    @keyframes toastSlide{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+    /* Success modal */
+    #ok{
+      display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);
+      z-index:4000;align-items:center;justify-content:center;
+    }
+    #ok .box{
+      background:#fff;border-radius:18px;padding:22px 26px;text-align:center;
+      box-shadow:var(--shadow);max-width:320px;border:1px solid #eef2f7;
+    }
+    #ok .big{font-size:2.2rem;color:#16a34a;margin-bottom:6px}
+
+    /* small */
+    .hash{padding:0 12px 4px;color:#9ca3af;font-size:.92rem}
+    @media(max-width:430px){ .card{margin:10px 8px} }
   </style>
 </head>
+
 <body>
   <div class="wrap">
-    <header>
-      <h1>
-        <span class="badge">ขายดี</span>
-        <span class="badge" style="background:#22c55e">ส่งฟรี</span>
-        <span class="badge" style="background:#ffb300">พร้อมส่ง</span>
-        <span class="badge gray">เก็บเงินปลายทาง</span><br/>
-        <b>เจลล้างหน้า 50ml</b> | อ่อนโยน pH-balanced | <span style="color:var(--primary-strong)">ล้างรองพื้น/คอนซีลเลอร์/กันแดด</span>
-      </h1>
-    </header>
+    <!-- Shopee-like header -->
+    <div class="topbar">
+      <div class="toprow">
+        <div class="brand">MB</div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="hint">ค้นหา: เจลล้างหน้า ล้างเมคอัพ อ่อนโยน</div>
+        </div>
+        <div class="icons">
+          <div class="icbtn" title="แชท"><i class="fa-solid fa-comment-dots"></i></div>
+          <div class="icbtn" title="ตะกร้า"><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+      </div>
+      <div class="subbar">
+        <span class="chip"><i class="fa-solid fa-bolt"></i> โปรวันนี้</span>
+        <span class="chip"><i class="fa-solid fa-truck-fast"></i> ส่งฟรี</span>
+        <span class="chip"><i class="fa-solid fa-box"></i> พร้อมส่ง</span>
+        <span class="chip"><i class="fa-solid fa-hand-holding-dollar"></i> เก็บปลายทาง</span>
+      </div>
+    </div>
 
+    <!-- Video (เดิมครบ) -->
     <section class="card video">
       <video autoplay muted loop playsinline controls>
         <source src="snaptik_7561719711449353480_v2.mp4" type="video/mp4">ไม่สามารถเล่นวิดีโอนี้ได้
       </video>
-      <div style="font-size:.93rem;color:#888;margin-top:6px">คลิปแนะนำสินค้า – วิธีใช้ และผลลัพธ์หลังล้าง</div>
+      <div style="font-size:.93rem;color:#9ca3af;margin-top:8px">คลิปแนะนำสินค้า – วิธีใช้ และผลลัพธ์หลังล้าง</div>
     </section>
 
-    <div class="trust">✅ สูตรอ่อนโยน | ล้างเมคอัพได้หมดจด | ลดสิวอุดตัน | ส่งฟรีทั่วประเทศ | เก็บปลายทาง</div>
+    <!-- Shopee-like product info -->
+    <section class="card">
+      <div class="titleBlock">
+        <p class="prodTitle"><b>เจลล้างหน้า 50ml</b> | อ่อนโยน pH-balanced | ล้างรองพื้น/คอนซีลเลอร์/กันแดด ได้หมดจด</p>
+        <div class="metaRow">
+          <span class="stars">⭐⭐⭐⭐⭐</span>
+          <span>4.9 (2,1xx)</span>
+          <span class="sep">•</span>
+          <span>ขายแล้ว 9,xxx ชิ้น</span>
+          <span class="sep">•</span>
+          <span style="color:#16a34a;font-weight:900">ส่งฟรี</span>
+        </div>
+      </div>
 
+      <div class="priceRow">
+        <div class="now"><small>฿</small><span id="priceNow">199</span></div>
+        <div class="was" id="priceWas">฿259</div>
+        <div class="off" id="offBadge">-23%</div>
+      </div>
+
+      <div class="voucherRow">
+        <div class="vLeft">โค้ดลด</div>
+        <div class="vItems">
+          <span class="voucher"><i class="fa-solid fa-ticket"></i> ส่งฟรีทั่วไทย</span>
+          <span class="voucher"><i class="fa-solid fa-ticket"></i> เก็บปลายทางได้</span>
+          <span class="voucher"><i class="fa-solid fa-ticket"></i> จำกัดสต็อก</span>
+        </div>
+      </div>
+
+      <div class="shipRow">
+        <span class="shipTag"><i class="fa-solid fa-truck-fast"></i> ส่งฟรีวันนี้</span>
+        <span class="codTag"><i class="fa-solid fa-hand-holding-dollar"></i> COD</span>
+      </div>
+
+      <div class="pack-box">
+        <div class="pack-head">
+          <b>ตัวเลือกสินค้า</b>
+          <div class="hintSmall">เลือกแพ็ก (เรทราคา)</div>
+        </div>
+        <div class="options" id="packOptions"></div>
+        <div class="packNote" id="packNote">แพ็กเดี่ยว 1 หลอด เหมาะสำหรับทดลองใช้/พกพา</div>
+
+        <div class="scarcity">🎉 โปรพิเศษ! สต็อกจำกัด • ส่งฟรีวันนี้เท่านั้น</div>
+      </div>
+    </section>
+
+    <div class="hash">#เจลล้างหน้า #เจลล้างหน้าผิวแพ้ง่าย #ล้างรองพื้น #ล้างคอนซีลเลอร์ #pHbalanced #อ่อนโยน</div>
+
+    <!-- รูป (เดิมครบ) -->
     <section class="card gallery">
       <img src="LINE_ALBUM_เจลล้างหน้า_251015_2.jpg" alt="เจลล้างหน้า 50ml ล้างรองพื้น คอนซีลเลอร์">
     </section>
 
-    <section style="padding:0 16px 6px;color:#7a7a7a;font-size:.95rem">
-      #เจลล้างหน้า #เจลล้างหน้าผิวแพ้ง่าย #ล้างรองพื้น #ล้างคอนซีลเลอร์ #pHbalanced #อ่อนโยน
-    </section>
-
-    <section class="card">
-      <div class="price"><span class="now" id="priceNow">฿199</span><span class="was" id="priceWas">฿259</span></div>
-      <div class="title">✨ เจลล้างหน้า 50ml อ่อนโยน ล้างรองพื้น/คอนซีลเลอร์ ได้สะอาดหมดจด</div>
-      <div class="pack-box" style="margin-top:12px">
-        <b>เลือกแพ็ก (เรทราคา):</b>
-        <div class="options" id="packOptions"></div>
-        <div id="packNote" style="font-size:.93rem;color:#6b6b6b;margin-top:6px">แพ็กเดี่ยว 1 หลอด เหมาะสำหรับทดลองใช้/พกพา</div>
-      </div>
-      <div class="scarcity" style="margin-top:12px">🎉 <b>โปรพิเศษ! สต็อกจำกัด</b> | ส่งฟรีวันนี้เท่านั้น</div>
-    </section>
-
+    <!-- ร้าน + LINE (เดิมครบ) -->
     <section class="card shop">
       <div class="avatar">MB</div>
       <div style="flex:1">
-        <div style="font-weight:700">Mblithe Official</div>
-        <a href="https://lin.ee/rn69fie" target="_blank" class="btn-line" id="btnLineTop"><i class="fa-brands fa-line"></i> สอบถาม-รับโปรผ่าน LINE</a>
+        <div class="shopname">Mblithe Official</div>
+        <div class="shopmeta">ตอบไว • ส่งของทุกวัน จันทร์–เสาร์</div>
+        <a href="https://lin.ee/rn69fie" target="_blank" class="btn-line" id="btnLineTop">
+          <i class="fa-brands fa-line"></i> สอบถาม-รับโปรผ่าน LINE
+        </a>
       </div>
     </section>
 
     <section class="card gallery">
       <img src="LINE_ALBUM_เจลล้างหน้า_251015_4.jpg" alt="เจลล้างหน้า 50ml ล้างรองพื้น คอนซีลเลอร์">
     </section>
-    
+
+    <!-- รายละเอียด (เดิมครบ) -->
     <section class="card features">
-      <h3 style="margin:0 0 8px 0; font-size:1.05rem">รายละเอียดสินค้า</h3>
+      <h3>รายละเอียดสินค้า</h3>
       <div class="row"><i class="fa-solid fa-droplet icon"></i> สูตรอ่อนโยน pH-balanced ผิวไม่เอี๊ยดตึง</div>
       <div class="row"><i class="fa-solid fa-wand-magic-sparkles icon"></i> ล้าง <b>รองพื้น/คอนซีลเลอร์/กันแดด</b> ได้หมดจด ลดโอกาสอุดตัน</div>
       <div class="row"><i class="fa-solid fa-leaf icon"></i> ปราศจากแอลกอฮอล์/พาราเบน/ซัลเฟต (SLS/SLES)</div>
       <div class="row"><i class="fa-solid fa-flask icon"></i> เหมาะกับผิวมัน/เป็นสิว/แพ้ง่าย ใช้ได้เช้า–เย็น</div>
-      <div style="color:#9a9aa9;font-size:.9rem">* ผลลัพธ์อาจแตกต่างกันไปในแต่ละบุคคล</div>
+      <div class="fineprint">* ผลลัพธ์อาจแตกต่างกันไปในแต่ละบุคคล</div>
     </section>
 
-     <section class="card video">
+    <!-- วิดีโอเพิ่ม (เดิมครบ) -->
+    <section class="card video">
       <video autoplay muted loop playsinline controls>
         <source src="SaveTik.co_7554818573219204359.mp4" type="video/mp4">ไม่สามารถเล่นวิดีโอนี้ได้
       </video>
-      <div style="font-size:.93rem;color:#888;margin-top:6px">คลิปแนะนำสินค้า – วิธีใช้ และผลลัพธ์หลังล้าง</div>
+      <div style="font-size:.93rem;color:#9ca3af;margin-top:8px">คลิปแนะนำสินค้า – วิธีใช้ และผลลัพธ์หลังล้าง</div>
     </section>
 
+    <!-- รีวิว (เดิมครบ) -->
     <section class="card reviews">
       <h3><i class="fa-solid fa-comments"></i> รีวิวจากลูกค้าจริง</h3>
 
@@ -217,21 +565,22 @@
       </div>
     </section>
 
+    <!-- วิดีโอแพ็คของ (เดิมครบ) -->
     <section class="card video">
       <video autoplay muted loop playsinline controls>
         <source src="SaveTik.co_7516781232450014482.mp4" type="video/mp4">ไม่สามารถเล่นวิดีโอนี้ได้
       </video>
-      <div style="font-size:.96rem;color:#7a7a7a;margin-top:6px">คลิปแพ็คของจริง + ส่งของทุกวัน จันทร์–เสาร์ 🚚</div>
+      <div style="font-size:.96rem;color:#9ca3af;margin-top:8px">คลิปแพ็คของจริง + ส่งของทุกวัน จันทร์–เสาร์ 🚚</div>
     </section>
   </div>
 
-  <!-- Sticky Footer -->
+  <!-- Sticky Footer (เดิมครบ) -->
   <div class="sticky">
     <a href="https://lin.ee/rn69fie" target="_blank" class="btn-line" id="btnLineBottom"><i class="fa-brands fa-line"></i> แอดไลน์รับโปร</a>
     <button class="btn-buy" id="btnBuy">สั่งซื้อเลย</button>
   </div>
 
-  <!-- Modal & Overlay -->
+  <!-- Modal & Overlay (เดิมครบ) -->
   <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-hidden="true"></div>
   <div class="modal" id="modal" style="display:none">
     <i class="fa-solid fa-times x" id="x"></i>
@@ -246,11 +595,11 @@
     <div style="margin-bottom:10px">
       <b>เลือกแพ็ก:</b>
       <div class="options" id="modalPacks"></div>
-      <div id="mNote" style="font-size:.92rem;color:#777;margin-top:6px">แพ็กเดี่ยว 1 หลอด เหมาะสำหรับทดลองใช้/พกพา</div>
+      <div id="mNote" style="font-size:.92rem;color:#6b7280;margin-top:8px">แพ็กเดี่ยว 1 หลอด เหมาะสำหรับทดลองใช้/พกพา</div>
     </div>
 
     <form class="form" id="orderForm" onsubmit="submitOrder(event)">
-      <!-- hidden fields for Sheets -->
+      <!-- hidden fields for Sheets (เดิมครบ) -->
       <input type="hidden" name="order_id" id="orderIdInput" />
       <input type="hidden" name="Order ID" id="orderIdAlias" />
 
@@ -258,7 +607,7 @@
       <input type="hidden" name="pack_id" id="packIdInput" />
       <input type="hidden" name="pack_label" id="packLabelInput" />
 
-      <!-- price/qty + aliases -->
+      <!-- price/qty + aliases (เดิมครบ) -->
       <input type="hidden" name="amount" id="amountInput" />
       <input type="hidden" name="price" id="priceInput" />
       <input type="hidden" name="qty" id="qtyInput" />
@@ -268,38 +617,53 @@
       <input type="hidden" name="ราคา" id="thaiPriceInput" />
       <input type="hidden" name="cod_amount" id="codAmountInput" />
 
-      <!-- display columns -->
+      <!-- display columns (เดิมครบ) -->
       <input type="hidden" name="Label" id="labelAlias" />
       <input type="hidden" name="หมายเหตุ" id="noteAlias" />
 
+      <!-- NEW: CAPI fields -->
+      <input type="hidden" name="fbp" id="fbpInput" />
+      <input type="hidden" name="fbc" id="fbcInput" />
+      <input type="hidden" name="user_agent" id="uaInput" />
+      <input type="hidden" name="event_source_url" id="esUrlInput" />
+      <input type="hidden" name="event_id" id="eventIdInput" />
+
       <label for="name">ชื่อ-นามสกุล</label>
       <input id="name" name="Name" type="text" required placeholder="กรอกชื่อ-นามสกุล" />
+
       <label for="phone">เบอร์โทรศัพท์</label>
-      <input id="phone" name="Phone" type="text" required placeholder="ตัวอย่าง: 0812345678" pattern="^[0-9]{10}$" title="กรอกเบอร์โทรศัพท์ 10 หลัก" />
+      <input id="phone" name="Phone" type="text" required placeholder="ตัวอย่าง: 0812345678"
+             pattern="^[0-9]{10}$" title="กรอกเบอร์โทรศัพท์ 10 หลัก" />
+
       <label for="address">ที่อยู่จัดส่ง</label>
       <textarea id="address" name="Address" rows="3" required placeholder="บ้านเลขที่, ถนน, ตำบล, อำเภอ, จังหวัด, รหัสไปรษณีย์"></textarea>
-      <div style="font-size:12px;color:#666;margin-top:4px">ข้อมูลของคุณจะถูกใช้เพื่อการยืนยันคำสั่งซื้อและจัดส่งสินค้าเท่านั้น และจะถูกเก็บรักษาตามมาตรการ PDPA ของเรา</div>
+
+      <div style="font-size:12px;color:#6b7280;margin-top:6px">
+        ข้อมูลของคุณจะถูกใช้เพื่อการยืนยันคำสั่งซื้อและจัดส่งสินค้าเท่านั้น และจะถูกเก็บรักษาตามมาตรการ PDPA ของเรา
+      </div>
+
       <button type="submit" class="submit" id="submitBtn">ยืนยันสั่งซื้อ</button>
     </form>
   </div>
 
-  <!-- Success Toast Popup -->
+  <!-- Success Toast Popup (เดิมครบ) -->
   <div id="salesToastContainer"></div>
 
-  <!-- Success Modal (simple) -->
-  <div id="ok" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:4000; align-items:center; justify-content:center;">
-    <div style="background:#fff; border-radius:16px; padding:22px 28px; text-align:center; box-shadow:var(--shadow); max-width:320px;">
-      <div style="font-size:2.2rem;color:#16cf3b; margin-bottom:6px"><i class="fa-solid fa-circle-check"></i></div>
-      <div style="font-weight:800; font-size:1.08rem; color:#1f2937">สั่งซื้อสำเร็จ!</div>
+  <!-- Success Modal (เดิมครบ) -->
+  <div id="ok">
+    <div class="box">
+      <div class="big"><i class="fa-solid fa-circle-check"></i></div>
+      <div style="font-weight:1000; font-size:1.08rem; color:#111827">สั่งซื้อสำเร็จ!</div>
       <div style="font-size:.98rem; color:#6b7280; margin-top:6px">เจ้าหน้าที่จะติดต่อกลับเพื่อยืนยันออเดอร์</div>
     </div>
   </div>
 
 <script>
   // ===== CONFIG =====
-  const GOOGLE_SHEET_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzBFS1zxkrbiOpcP-1wYxALRfU3wJprPRT9KJju2wWEY2Rdd7OnJbFDTCErH-amUZrO/exec';
+  // ✅ เปลี่ยนเป็น Script ใหม่ตามที่คุณให้มา
+  const GOOGLE_SHEET_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzfhyeH67BCeN2NQ8GigRVSGzSfclSjIOgAQJBGu-QB6KfwxBdnaNWjXSiVhZ8qdoI/exec';
 
-  // แพ็ก (เรทราคา): 199 / 379 / 549 / 929
+  // แพ็ก (เรทราคา): 199 / 379 / 549 / 929 (เดิมครบ)
   const PACKS = [
     { id:'P1', qty:1, label:'แพ็กเดี่ยว 1 หลอด', price:199, compareAt:259, note:'เหมาะสำหรับทดลองใช้/พกพา' },
     { id:'P2', qty:2, label:'แพ็กคุ้มค่า 2 หลอด', price:379, compareAt:518, note:'ประหยัดกว่า ตกหลอดละ ~189.5฿' },
@@ -313,6 +677,27 @@
   const $  = (sel)=>document.querySelector(sel);
   const $$ = (sel)=>document.querySelectorAll(sel);
   const money = n => '฿' + Number(n).toLocaleString('th-TH');
+
+  function calcOff(now, was){
+    if(!was || was<=0) return 0;
+    return Math.max(0, Math.round((1 - (now/was))*100));
+  }
+
+  // ===== NEW: CAPI cookie helpers =====
+  function getCookie(name){
+    const m = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([$?*|{}\]\\/\+^])/g, '\\$1') + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : '';
+  }
+  function getFbc(){
+    const fbc = getCookie('_fbc');
+    if (fbc) return fbc;
+    const fbclid = new URLSearchParams(location.search).get('fbclid');
+    if (!fbclid) return '';
+    return `fb.1.${Math.floor(Date.now()/1000)}.${fbclid}`;
+  }
+  function readMetaIds(){
+    return { fbp: getCookie('_fbp') || '', fbc: getFbc() || '' };
+  }
 
   // ===== Render pack buttons (หน้า + โมดอล) =====
   function renderPacks(){
@@ -333,7 +718,6 @@
       host2.appendChild(mk());
     });
 
-    // เซ็ตสถานะแรกเริ่ม
     selectPack(selectedPack.id);
   }
 
@@ -341,26 +725,30 @@
   function selectPack(id){
     selectedPack = PACKS.find(x=>x.id===id) || PACKS[0];
 
-    // toggle active
     $$('#packOptions .btn-option').forEach(b=>b.classList.toggle('active', b.dataset.id===selectedPack.id));
     $$('#modalPacks .btn-option').forEach(b=>b.classList.toggle('active', b.dataset.id===selectedPack.id));
 
     // display price/title
-    $('#priceNow').textContent = money(selectedPack.price);
+    // Shopee-like: แยกตัวเลขออกจาก ฿ เล็กน้อย
+    const nowEl = $('#priceNow');
+    nowEl.textContent = Number(selectedPack.price).toLocaleString('th-TH');
     $('#priceWas').textContent = money(selectedPack.compareAt);
+
+    const off = calcOff(selectedPack.price, selectedPack.compareAt);
+    $('#offBadge').textContent = off ? `-${off}%` : '';
+
     $('#mPrice').textContent   = money(selectedPack.price);
     $('#mTitle').textContent   = `เจลล้างหน้า 50ml (${selectedPack.label})`;
     $('#packNote').textContent = selectedPack.note;
     $('#mNote').textContent    = selectedPack.note;
 
-    // hidden fields
+    // hidden fields (เดิมครบ)
     const priceStr = String(selectedPack.price);
     const qtyStr   = String(selectedPack.qty);
 
     $('#orderIdInput').value  = '';
     $('#orderIdAlias').value  = '';
 
-    // product แทรก "ราคา + จำนวน" เข้าไปด้วย (เพื่อให้เห็นในชีตทันที)
     const prodWithPrice = `Gel Cleanser 50ml - ${selectedPack.label} | ${money(selectedPack.price)} | Qty ${selectedPack.qty}`;
     $('#productInput').value  = prodWithPrice;
     $('#packIdInput').value   = selectedPack.id;
@@ -375,7 +763,6 @@
     $('#thaiPriceInput').value= priceStr;
     $('#codAmountInput').value= priceStr;
 
-    // label/note เพื่ออ่านง่ายในชีต
     $('#labelAlias').value = `COD: ${money(selectedPack.price)} • ${selectedPack.label}`;
     $('#noteAlias').value  = `ราคา ${money(selectedPack.price)} / Qty ${selectedPack.qty}`;
   }
@@ -384,7 +771,9 @@
   function openModal(){
     $('#overlay').style.display='block';
     $('#modal').style.display='block';
-    if (window.fbq) fbq('track','InitiateCheckout',{value:selectedPack.price,currency:'THB'});
+
+    const evId = 'IC-' + Date.now(); // ใช้แยกสำหรับ begin_checkout
+    if (window.fbq) fbq('track','InitiateCheckout',{value:selectedPack.price,currency:'THB'},{eventID: evId});
     if (window.ttq) ttq.track('InitiateCheckout');
     if (window.gtag) gtag('event','begin_checkout',{value:selectedPack.price,currency:'THB'});
   }
@@ -394,40 +783,44 @@
   }
 
   // ===== LINE tracking =====
-  function trackLine(){ if(window.fbq) fbq('track','Contact'); if(window.ttq) ttq.track('Contact'); }
+  function trackLine(){
+    if(window.fbq) fbq('track','Contact');
+    if(window.ttq) ttq.track('Contact');
+  }
 
-  // ===== ส่งออเดอร์เข้า Google Sheets (คีย์ตรง Apps Script ปัจจุบัน) =====
+  // ===== ส่งออเดอร์เข้า Google Sheets + ส่งข้อมูลสำหรับ Meta CAPI (ใหม่) =====
   async function submitOrder(e){
     e.preventDefault();
     const btn = $('#submitBtn');
     btn.disabled = true; btn.textContent = 'กำลังส่งข้อมูล...';
 
-    // sync ให้ชัวร์ว่า hidden fields ตรงแพ็กล่าสุด
+    // sync
     selectPack(selectedPack.id);
 
     const formEl = $('#orderForm');
     const fd = new FormData(formEl);
 
-    // Build payload (คีย์เล็กตรงกับ e.parameter ของ Apps Script)
     const orderId    = 'ORD-' + Date.now();
     const nameVal    = ($('#name').value || '').trim();
     const phoneRaw   = ($('#phone').value || '').trim().replace(/\s+/g,'');
-    const phoneVal   = phoneRaw ? ("'" + phoneRaw.replace(/\D/g,'')) : ''; // กัน 0 หายในชีต
+    const phoneVal   = phoneRaw ? ("'" + phoneRaw.replace(/\D/g,'')) : '';
     const addressVal = ($('#address').value || '').trim();
     const productStr = `Gel Cleanser 50ml - ${selectedPack.label} | ${money(selectedPack.price)} | Qty ${selectedPack.qty}`;
 
+    // ===== Base fields (เดิม) =====
     fd.set('order_id', orderId);
     fd.set('product',  productStr);
     fd.set('name',     nameVal);
     fd.set('phone',    phoneVal);
     fd.set('address',  addressVal);
 
-    // alias เผื่อมีใช้ในชีต
+    // เผื่อชีตหัวคอลัมน์เป็นแบบตัวใหญ่ (แนะนำให้ชัวร์)
     fd.set('Order ID', orderId);
     fd.set('Product',  productStr);
+    fd.set('Name',     nameVal);
     fd.set('Phone',    phoneVal);
+    fd.set('Address',  addressVal);
 
-    // ราคา/qty + aliases อื่น ๆ
     fd.set('amount', String(selectedPack.price));
     fd.set('price',  String(selectedPack.price));
     fd.set('qty',    String(selectedPack.qty));
@@ -443,17 +836,47 @@
     fd.set('Label', _label);
     fd.set('หมายเหตุ', _note);
 
+    // ===== NEW: ส่งค่าที่จำเป็นสำหรับ Meta CAPI (fbp/fbc/ua/url/event_id) =====
+    const ids = readMetaIds();
+    const eventId = orderId; // ใช้ orderId เป็น event_id เพื่อ dedup
+
+    fd.set('fbp', ids.fbp);
+    fd.set('fbc', ids.fbc);
+    fd.set('user_agent', navigator.userAgent || '');
+    fd.set('event_source_url', location.href);
+    fd.set('event_id', eventId);
+
+    // ใส่ลง hidden ด้วย (เผื่อ debug/ตรวจใน form)
+    $('#fbpInput').value = ids.fbp;
+    $('#fbcInput').value = ids.fbc;
+    $('#uaInput').value = navigator.userAgent || '';
+    $('#esUrlInput').value = location.href;
+    $('#eventIdInput').value = eventId;
+
     // DEBUG
     try { const entries=[]; fd.forEach((v,k)=>entries.push(`${k}=${v}`)); console.log('[ORDER FORMSENT]', entries.join('&')); } catch(_){}
 
     try{
       const res  = await fetch(GOOGLE_SHEET_WEB_APP_URL, { method:'POST', body: fd });
       const data = await res.json();
+
       if(data.result==='success'){
-        closeModal(); formEl.reset();
-        if(window.fbq) fbq('track','Purchase',{value:selectedPack.price,currency:'THB'});
-        if(window.ttq) ttq.track('CompletePayment',{contents:[{content_id:'GEL-50ML',content_type:'product',quantity:selectedPack.qty}], value:selectedPack.price, currency:'THB'});
+        closeModal();
+        formEl.reset();
+
+        // ===== Pixel ยิงฝั่ง Browser + ใส่ eventID เพื่อ dedup กับ CAPI =====
+        if(window.fbq) fbq('track','Purchase',
+          { value:selectedPack.price, currency:'THB' },
+          { eventID: eventId }
+        );
+
+        if(window.ttq) ttq.track('CompletePayment',{
+          contents:[{content_id:'GEL-50ML',content_type:'product',quantity:selectedPack.qty}],
+          value:selectedPack.price, currency:'THB'
+        });
+
         if(window.gtag) gtag('event','conversion',{'send_to':'AW-17035064059/53zPCNHE2OIaEPvl-bo_','value':selectedPack.price,'currency':'THB'});
+
         showOk();
         showSaleToast({ name:(nameVal||'ลูกค้า'), pack:selectedPack.label, price:selectedPack.price });
       } else {
@@ -468,10 +891,11 @@
   }
 
   function showOk(){
-    const box = $('#ok'); box.style.display='flex'; setTimeout(()=> box.style.display='none', 2200);
+    const box = $('#ok'); box.style.display='flex';
+    setTimeout(()=> box.style.display='none', 2200);
   }
 
-  // ===== Sales Toast (ป๊อปอัพ) =====
+  // ===== Sales Toast (เดิมครบ) =====
   const NAMES = ['เอม','นัท','โบว์','กวาง','ปอ','ออย','กิ๊ฟ','มาย','เบส','พิม','นิว','อิง','ก้อง','น้ำผึ้ง','ก้อย'];
   const PROVINCES = ['กรุงเทพฯ','นนทบุรี','ปทุมธานี','ชลบุรี','เชียงใหม่','ขอนแก่น','นครราชสีมา','ภูเก็ต','สงขลา','นครปฐม'];
   const maskName = n => (n? (n.trim()[0]||'ลูกค้า') + (n.length>1?'**':'*') : 'ลูกค้า');
@@ -491,11 +915,11 @@
   function scheduleFakeToast(){
     const p = PACKS[Math.floor(Math.random()*PACKS.length)];
     showSaleToast({ name: NAMES[Math.floor(Math.random()*NAMES.length)], pack:p.label, price:p.price, province: PROVINCES[Math.floor(Math.random()*PROVINCES.length)] });
-    const next = 16000 + Math.floor(Math.random()*14000); // 16–30s
+    const next = 16000 + Math.floor(Math.random()*14000);
     setTimeout(scheduleFakeToast, next);
   }
 
-  // ===== Event bindings & Init =====
+  // ===== Event bindings & Init (เดิมครบ) =====
   document.addEventListener('click', (e)=>{
     if(e.target && e.target.id==='overlay') closeModal();
   });
